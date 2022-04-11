@@ -127,12 +127,17 @@ a {
 }
 
 .cart-container {
-    border: 1px solid red;
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 25%;
+    width: 400px;
+    /* transform: translateX(150px); */
+}
+
+.cart-container:hover{
+    /* transform: translateX(0px); */
 }
 
 .clothes-container{
@@ -174,7 +179,12 @@ a {
     color:black;
 }
 
+.item1-cart {
+    height: 250px;
+    width: 250px;
+}
 
-/* .cart-container:hover{
-    transform: translateX(-50px);
-} */
+.item2-cart {
+    height: 250px;
+    width: 250px;
+}
