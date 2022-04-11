@@ -133,6 +133,7 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     width: 400px;
+    padding-left: 1rem;
     /* transform: translateX(150px); */
 }
 
