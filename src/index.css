@@ -94,10 +94,15 @@ a {
     border-radius: 25px;
 }
 
+.store-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .shop-container {
     border: 1px solid red;
     height: 92%;
-    width: 100%;
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,11 +128,11 @@ a {
 
 .cart-container {
     border: 1px solid red;
-    height: 92%;
-    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 25%;
 }
 
 .clothes-container{
@@ -136,8 +141,8 @@ a {
     min-height: 350px;
 }
 
-.clothes-img {
-    height: 250px;
+.clothes-image {
+    height: 200px;
     width: 100%;
 }
 
@@ -168,3 +173,8 @@ a {
     background-color: white;
     color:black;
 }
+
+
+/* .cart-container:hover{
+    transform: translateX(-50px);
+} */

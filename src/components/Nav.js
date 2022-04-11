@@ -15,9 +15,9 @@ export default function Nav() {
                     <Link to ='/shop'>
                         <li>Shop</li>
                     </Link>
-                    <Link to ='/cart'>
+                    {/* <Link to ='/cart'>
                         <li>Cart</li>
-                    </Link>
+                    </Link> */}
                 </ul>
             </nav>
         </header>
