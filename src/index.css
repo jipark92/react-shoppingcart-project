@@ -7,15 +7,21 @@
 .main-container {
     height: 100vh;
     width: 100vw;
+    background-color: antiquewhite;
 }
 
 .header-container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
-    height:8%;
+    min-height:8%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.store-name {
+    color: red;
 }
 
 .nav-container {
@@ -35,4 +41,86 @@
 
 .navigation li {
     font-size: 1.4rem;
+}
+
+.logo-container{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-img {
+    height: 75px;
+    width: 75px
+}
+
+a {
+    text-decoration: none;
+}
+
+.home-container{
+    border: 1px solid red;
+    height: 92%;
+    width: 100%;
+    padding: 3rem;
+}
+
+.motto-container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    border-radius: 25px;
+    padding: 0.5rem;
+}
+
+.motto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.motto-img-container {
+    width:50%;
+}
+
+.motto-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.shop-container {
+    border: 1px solid red;
+    height: 92%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopnow-btn {
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    padding:1rem;
+    background-color: black;
+    color:white;
+    font-weight: 1000;
+}
+
+.shopnow-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cart-container {
+    border: 1px solid red;
+    height: 92%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
