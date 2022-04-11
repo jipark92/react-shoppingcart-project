@@ -5,7 +5,7 @@
 }
 
 .main-container {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: antiquewhite;
 }
@@ -18,6 +18,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    padding: 1rem;
 }
 
 .store-name {
@@ -57,6 +58,7 @@
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .home-container{
@@ -99,6 +101,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
 }
 
 .shopnow-btn {
@@ -123,4 +128,43 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.clothes-container{
+    border: 1px solid red;
+    width: 250px;
+    min-height: 350px;
+}
+
+.clothes-img {
+    height: 250px;
+    width: 100%;
+}
+
+.item-info-container{ 
+    color:red;
+    padding: 0.5rem;
+    height: 100px;
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding:0.5rem;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    border: none;
+    font-size: 1.1rem;
+    background-color: black;
+    color: white;
+}
+
+.add-to-cart-btn:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    background-color: white;
+    color:black;
 }
