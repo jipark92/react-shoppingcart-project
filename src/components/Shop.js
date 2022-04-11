@@ -3,17 +3,18 @@ import clothesDatas from '../clothesData'
 import Cart from './Cart'
 
 export default function Shop() {
-    
     //item quantity
     const [cart, setCart] = useState(false)
     const [item1, setItem1] = useState(0)
+    const [item2, setItem2] = useState(0)
+
 
     //show cart 
     useEffect(()=>{
-        if (item1 > 0 ){
+        if (item1 > 0 || item2 > 0){
             setCart(true)
         }
-    })
+    },[item1,item2])
 
     //const add to cart
     const addToCartBtn = (e) => {
@@ -21,7 +22,9 @@ export default function Shop() {
             if (parseInt(e.target.id) === clothesData.id){
                 if(clothesData.id === 0){
                     setItem1((prevItem1)=>prevItem1 + 1)
-                    console.log(item1)
+                } else if (clothesData.id === 1){
+                    setItem2((prevItem2)=>prevItem2 + 1)
+
                 }
             }
         })
@@ -53,7 +56,7 @@ export default function Shop() {
                 {showClothesDisplay}
             </div>
             <div className='cart-container'>
-                {cart && <Cart quantity={item1}/>}
+                {cart && <Cart quantity1={item1} quantity2={item2}/>}
             </div>
         </div>
     )
