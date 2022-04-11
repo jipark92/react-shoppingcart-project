@@ -2,6 +2,7 @@ Objective: The purpose of this project is to use BrowserRouter, Routes, Route to
 
 Demo links:
 
-GitHub Page: https://norfkorean.github.io/react-shoppingcart-project/
+1. Netlify: https://jipark-react-shoppingcart.netlify.app/
 
-Netlify: https://jipark-react-shoppingcart.netlify.app/
+
+2. GitHub Page: https://norfkorean.github.io/react-shoppingcart-project/
