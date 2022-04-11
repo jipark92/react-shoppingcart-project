@@ -8,6 +8,17 @@ export default function Shop() {
     const [item1, setItem1] = useState(0)
     const [item2, setItem2] = useState(0)
 
+    //increase/decrease quantity
+    const decreaseBtn = (e) => {
+        // console.log(e.target.id)
+        if (e.target.id === "0"){
+            setItem1((prevItem1)=>prevItem1 - 1)
+        } else if(e.target.id === "1"){
+            setItem2((prevItem2)=>prevItem2 - 1)
+        }
+    }
+
+    
 
     //show cart 
     useEffect(()=>{
@@ -56,7 +67,12 @@ export default function Shop() {
                 {showClothesDisplay}
             </div>
             <div className='cart-container'>
-                {cart && <Cart quantity1={item1} quantity2={item2}/>}
+                {cart && <Cart 
+                    quantity1={item1} 
+                    quantity2={item2} 
+                    decreaseClick={decreaseBtn}
+                    
+                />}
             </div>
         </div>
     )
