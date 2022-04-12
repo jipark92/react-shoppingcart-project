@@ -11,7 +11,7 @@ export default function Cart(props) {
                 <div className='quantity-container'>
                     <button onClick={props.decreaseClick} id="0" className='decrease-btn'>-</button>
                     <p className='quantity'>{props.quantity1}</p>
-                    <button className='increase-btn'>+</button>
+                    <button className='increase-btn' onClick={props.increaseClick} id="0">+</button>
                 </div>
             </div>
         )
