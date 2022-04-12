@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from './components/Nav'
 import Home from './components/Home';
 import Shop from './components/Shop';
-import Cart from './components/Cart'
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 export default function RouteSwitch() {
     return (
@@ -12,8 +13,9 @@ export default function RouteSwitch() {
             <Routes>
                 <Route path='/' element={<Home/>}/> 
                 <Route path='/shop' element={<Shop/>}/>
-                {/* <Route path='/cart' element={<Cart/>}/>  */}
+                <Route path='/contact' element={<Contact/>}/> 
             </Routes>
+            <Footer/>
         </BrowserRouter>
     )
 }
