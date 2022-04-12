@@ -21,6 +21,7 @@
     flex-wrap: wrap;
     padding: 1rem;
     border: 1px solid white;
+    border-radius: 25px;
 }
 
 .store-name {
@@ -66,7 +67,7 @@ a {
 }
 
 .home-container{
-    height: 92%;
+    height: 100%;
     width: 100%;
 }
 
@@ -103,15 +104,15 @@ a {
 }
 
 .shop-container {
-    height: 92%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 0.8rem;
     flex-wrap: wrap;
     padding: 0.5rem;
-    border: 3px solid white;
-
+    border: 1px solid white;
+    border-radius: 25px;
 }
 
 .shopnow-btn {
@@ -131,13 +132,14 @@ a {
 }
 
 .cart-container {
-    border: 3px solid white;
+    border: 1px solid white;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     min-width: 250px;
-    height: 1160px;
+    height: 1105px;
     overflow-y: scroll;
     color: white;
 }
@@ -154,14 +156,16 @@ a {
 }
 
 .clothes-container{
-    border: 3px solid white;
-    width: 250px;
+    border: 1px solid white;
+    border-radius: 25px;    
+    width: 200px;
     min-height: 350px;
 }
 
 .clothes-image {
     height: 200px;
     width: 100%;
+    border-radius: 25px;
 }
 
 .item-info-container{ 
@@ -174,7 +178,8 @@ a {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding:0.5rem;
+    border: 1px solid white;
+    border-radius: 25px;
 }
 
 .add-to-cart-btn {
@@ -183,6 +188,8 @@ a {
     font-size: 1.1rem;
     background-color: black;
     color: white;
+    border: 1px solid white;
+    border-radius: 25px;
 }
 
 .add-to-cart-btn:hover {
@@ -193,7 +200,8 @@ a {
 }
 
 .item-cart {
-    border: 2px solid white;
+    border: 1px solid white;
+    border-radius: 25px;
     padding-bottom: 1rem;
     width: 200px;
     display: flex;
@@ -206,6 +214,7 @@ a {
 .item-pic-cart {
     height: 250px;
     width: 100%;
+    border-radius: 25px;
 }
 
 .checkout-container{
@@ -220,6 +229,8 @@ a {
     border-radius: 15px;
     width: 100%;
     padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 25px;
 }
 
 .checkout-btn:hover {
@@ -240,7 +251,7 @@ a {
     height: 35px;
     font-weight: 1000;
     background-color: brown;
-    border: none;
+    border: 1px solid white;
 }
 
 .increase-btn {
@@ -250,14 +261,15 @@ a {
     height: 35px;
     font-weight: 1000;
     background-color: green;
-    border: none;
+    border: 1px solid white;
 }
 
 .quantity {
     font-size: 1.2rem;
     font-weight: 1000;
-    padding: 0.2rem;
+    padding: 0.3rem;
     border: 2px solid black;
+    border: 1px solid white;
 }
 
 .contact-container {
@@ -267,6 +279,7 @@ a {
     align-items: center;
     height: 75vh;
     border: 1px solid white;
+    border-radius: 25px;
 }
 
 .information-container {
@@ -276,6 +289,9 @@ a {
     justify-content: space-between;
     align-items: center;
     color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 1rem;
 }
 
 .address-container {
@@ -296,5 +312,4 @@ a {
     text-align: center;
     text-decoration: none;
     color: white;
-
 }
