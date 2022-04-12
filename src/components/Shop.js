@@ -63,7 +63,6 @@ export default function Shop() {
         }
     }
 
-
     //show cart on render note: i dont think  i need all items but making sure to update on every render tho.
     useEffect(()=>{
         if (item1 > 0 || item2 > 0 || item3 > 0 || item4 > 0 || item5 > 0 || item6 > 0 || item7 > 0 || item8 > 0 || item9 > 0){
