@@ -15,7 +15,7 @@ export default function Shop() {
     const [item8, setItem8] = useState(0)
     const [item9, setItem9] = useState(0)
 
-    //increase/decrease quantity
+    //decrease quantity
     const decreaseBtn = (e) => {
         // console.log(e.target.id)
         if (e.target.id === "0"){
@@ -38,6 +38,31 @@ export default function Shop() {
             setItem9((prevItem9)=> prevItem9 - 1)
         }
     }
+
+    //const increase quantity
+    const increaseBtn = (e) => {
+        console.log('click')
+        if (e.target.id === "0"){
+            setItem1((prevItem1)=>prevItem1 + 1)
+        } else if(e.target.id === "1"){
+            setItem2((prevItem2)=>prevItem2 + 1)
+        } else if (e.target.id === "2"){
+            setItem3((prevItem3)=> prevItem3 + 1)
+        } else if (e.target.id === "3"){
+            setItem4((prevItem4)=> prevItem4 + 1)   
+        } else if (e.target.id === "4"){
+            setItem5((prevItem5)=> prevItem5 + 1)
+        } else if (e.target.id === "5"){
+            setItem6((prevItem6)=> prevItem6 + 1)
+        } else if (e.target.id === "6"){
+            setItem7((prevItem7)=> prevItem7 + 1)
+        } else if (e.target.id === "7"){
+            setItem8((prevItem8)=> prevItem8 + 1)
+        } else if (e.target.id === "8"){
+            setItem9((prevItem9)=> prevItem9 + 1)
+        }
+    }
+
 
     //show cart on render note: i dont think  i need all items but making sure to update on every render tho.
     useEffect(()=>{
@@ -110,7 +135,7 @@ export default function Shop() {
                     quantity8={item8} 
                     quantity9={item9} 
                     decreaseClick={decreaseBtn}
-                    
+                    increaseClick={increaseBtn}
                 />}
             </div>
         </div>
