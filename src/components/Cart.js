@@ -16,7 +16,6 @@ export default function Cart(props) {
             </div>
         )
     }
-
     const showItem2 = () => {
         return (
             <div className='item-cart' >
@@ -26,12 +25,11 @@ export default function Cart(props) {
                 <div className='quantity-container'>
                     <button onClick={props.decreaseClick} id="1" className='decrease-btn'>-</button>
                     <p className='quantity'>{props.quantity2}</p>
-                    <button className='increase-btn'>+</button>
+                    <button className='increase-btn' onClick={props.increaseClick} id="1">+</button>
                 </div>
             </div>
         )
     }
-
     const showItem3 = () => {
         return (
             <div className='item-cart' >
@@ -41,12 +39,11 @@ export default function Cart(props) {
                 <div className='quantity-container'>
                     <button onClick={props.decreaseClick} id="2" className='decrease-btn'>-</button>
                     <p className='quantity'>{props.quantity3}</p>
-                    <button className='increase-btn'>+</button>
+                    <button className='increase-btn' onClick={props.increaseClick} id="2">+</button>
                 </div>
             </div>
         )
     }
-
     const showItem4 = () => {
         return (
             <div className='item-cart' >
@@ -56,12 +53,11 @@ export default function Cart(props) {
                 <div className='quantity-container'>
                     <button onClick={props.decreaseClick} id="3" className='decrease-btn'>-</button>
                     <p className='quantity'>{props.quantity4}</p>
-                    <button className='increase-btn'>+</button>
+                    <button className='increase-btn' onClick={props.increaseClick} id="3">+</button>
                 </div>
             </div>
         )
     }
-
     const showItem5 = () => {
         return (
             <div className='item-cart' >
@@ -71,12 +67,11 @@ export default function Cart(props) {
                 <div className='quantity-container'>
                     <button onClick={props.decreaseClick} id="4" className='decrease-btn'>-</button>
                     <p className='quantity'>{props.quantity5}</p>
-                    <button className='increase-btn'>+</button>
+                    <button className='increase-btn' onClick={props.increaseClick} id="4">+</button>
                 </div>
             </div>
         )
     }
-
     const showItem6 = () => {
         return (
             <div className='item-cart' >
@@ -86,7 +81,7 @@ export default function Cart(props) {
                 <div className='quantity-container'>
                     <button onClick={props.decreaseClick} id="5" className='decrease-btn'>-</button>
                     <p className='quantity'>{props.quantity6}</p>
-                    <button className='increase-btn'>+</button>
+                    <button className='increase-btn' onClick={props.increaseClick} id="5">+</button>
                 </div>
             </div>
         )
@@ -100,7 +95,7 @@ export default function Cart(props) {
                 <div className='quantity-container'>
                     <button onClick={props.decreaseClick} id="6" className='decrease-btn'>-</button>
                     <p className='quantity'>{props.quantity7}</p>
-                    <button className='increase-btn'>+</button>
+                    <button className='increase-btn' onClick={props.increaseClick} id="6">+</button>
                 </div>
             </div>
         )
@@ -114,7 +109,7 @@ export default function Cart(props) {
                 <div className='quantity-container'>
                     <button onClick={props.decreaseClick} id="7" className='decrease-btn'>-</button>
                     <p className='quantity'>{props.quantity8}</p>
-                    <button className='increase-btn'>+</button>
+                    <button className='increase-btn' onClick={props.increaseClick} id="7">+</button>
                 </div>
             </div>
         )
@@ -128,12 +123,17 @@ export default function Cart(props) {
                 <div className='quantity-container'>
                     <button onClick={props.decreaseClick} id="8" className='decrease-btn'>-</button>
                     <p className='quantity'>{props.quantity9}</p>
-                    <button className='increase-btn'>+</button>
+                    <button className='increase-btn' onClick={props.increaseClick} id="8">+</button>
                 </div>
             </div>
         )
     }
-    
+
+    const displayTotal = () => {
+        let a = props.quantity9 * 55 + props.quantity8 * 39 + props.quantity7 * 65 + props.quantity6 * 39 + props.quantity5 * 30 + props.quantity4 * 35 + props.quantity3 * 35 + props.quantity2 * 65 + props.quantity1 * 150
+        console.log(a)
+        return a
+    }
     return (
         <div className='cart-list'>
             <div className='cart-title'>
@@ -149,6 +149,7 @@ export default function Cart(props) {
             {props.quantity8 > 0 ? showItem8() : ""}
             {props.quantity9 > 0 ? showItem9() : ""}
             <div className='checkout-container'>
+                <h2>TOTAL: ${displayTotal()}</h2>
                 <button className='checkout-btn'>Checkout</button>
             </div>
         </div>
