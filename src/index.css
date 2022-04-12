@@ -6,12 +6,11 @@
 
 .main-container {
     min-height: 100vh;
-    width: 100vw;
+    width: 99vw;
     background-color: antiquewhite;
 }
 
 .header-container{
-    /* border: 1px solid black; */
     width: 100%;
     min-height:8%;
     display: flex;
@@ -62,7 +61,6 @@ a {
 }
 
 .home-container{
-    border: 1px solid red;
     height: 92%;
     width: 100%;
     padding: 3rem;
@@ -71,7 +69,6 @@ a {
 .motto-container {
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
     border-radius: 25px;
     padding: 0.5rem;
 }
@@ -100,15 +97,12 @@ a {
 }
 
 .shop-container {
-    border: 1px solid red;
     height: 92%;
-    width: 75%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 1rem;
+    gap: 0.2rem;
     flex-wrap: wrap;
-    padding: 1rem;
 }
 
 .shopnow-btn {
@@ -127,21 +121,15 @@ a {
 }
 
 .cart-container {
-    border: 1px solid blue;
-    background-color: white;
+    border: 3px solid green;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     min-width: 200px;
-    height: 1165px;
+    height: 1160px;
     padding-left: 1rem;
     overflow-y: scroll;
-    /* transform: translateX(150px); */
-}
-
-.cart-container:hover{
-    /* transform: translateX(0px); */
 }
 
 .cart-title{
@@ -156,7 +144,7 @@ a {
 }
 
 .clothes-container{
-    border: 1px solid red;
+    border: 3px solid black;
     width: 250px;
     min-height: 350px;
 }
@@ -262,4 +250,39 @@ a {
     font-weight: 1000;
     padding: 0.2rem;
     border: 2px solid black;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    border: 1px solid black;
+}
+
+.information-container {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address-container {
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.comment-box {
+    resize: none;
+}
+
+.footer-container {
+    text-align: center;
 }
