@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 export default function Cart(props) {
-
+    //show items
     const showItem1 = () => {
         return (
             <div className='item-cart'>
@@ -137,7 +137,7 @@ export default function Cart(props) {
     return (
         <div className='cart-list'>
             <div className='cart-title'>
-                <h3>Your Shopping Cart: </h3>
+                <h2>Your Shopping Cart: </h2>
             </div>
             {props.quantity1 > 0 ? showItem1() : ""}
             {props.quantity2 > 0 ? showItem2() : ""}
