@@ -12,9 +12,11 @@ export default function Contact() {
                     <label for="email">Email</label>
                     <input type="text" name="email"></input>
                     <label for="yourcomment">Your Comment</label>
-                    <textarea name="yourcomment" className='comment-box'></textarea>
+                    <textarea name="yourcomment" className='comment-box' rows="7"></textarea>
+                    <button onClick={(e)=>e.preventDefault()}>Submit</button>
                 </form>
                 <div className="address-container">
+                    <h4><u>Address:</u></h4>
                     <h3>FakeStore</h3>
                     <h3>123 TikTok Street</h3>
                     <h3>Tik City, Tok State, 101010</h3>
