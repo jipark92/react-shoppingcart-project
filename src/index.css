@@ -142,6 +142,13 @@ a {
     height: 1105px;
     overflow-y: scroll;
     color: white;
+    transition: transform 0.5s ease-in-out;
+    transform: translate(200px);
+}
+
+.cart-container:hover {    
+    transition: transform 0.5s ease-in-out;
+    transform: translate(0%);
 }
 
 .cart-title{
