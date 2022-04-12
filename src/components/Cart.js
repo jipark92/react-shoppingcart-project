@@ -128,29 +128,30 @@ export default function Cart(props) {
             </div>
         )
     }
-
     const displayTotal = () => {
         let a = props.quantity9 * 55 + props.quantity8 * 39 + props.quantity7 * 65 + props.quantity6 * 39 + props.quantity5 * 30 + props.quantity4 * 35 + props.quantity3 * 35 + props.quantity2 * 65 + props.quantity1 * 150
         console.log(a)
         return a
     }
     return (
-        <div className='cart-list'>
-            <div className='cart-title'>
-                <h2>Your Shopping Cart: </h2>
-            </div>
-            {props.quantity1 > 0 ? showItem1() : ""}
-            {props.quantity2 > 0 ? showItem2() : ""}
-            {props.quantity3 > 0 ? showItem3() : ""}
-            {props.quantity4 > 0 ? showItem4() : ""}
-            {props.quantity5 > 0 ? showItem5() : ""}
-            {props.quantity6 > 0 ? showItem6() : ""}
-            {props.quantity7 > 0 ? showItem7() : ""}
-            {props.quantity8 > 0 ? showItem8() : ""}
-            {props.quantity9 > 0 ? showItem9() : ""}
-            <div className='checkout-container'>
-                <h2>TOTAL: ${displayTotal()}</h2>
-                <button className='checkout-btn'>Checkout</button>
+        <div className='cart-container'>
+            <div className='cart-list'>
+                <div className='cart-title'>
+                    <h2>Your Shopping Cart: </h2>
+                </div>
+                {props.quantity1 > 0 ? showItem1() : ""}
+                {props.quantity2 > 0 ? showItem2() : ""}
+                {props.quantity3 > 0 ? showItem3() : ""}
+                {props.quantity4 > 0 ? showItem4() : ""}
+                {props.quantity5 > 0 ? showItem5() : ""}
+                {props.quantity6 > 0 ? showItem6() : ""}
+                {props.quantity7 > 0 ? showItem7() : ""}
+                {props.quantity8 > 0 ? showItem8() : ""}
+                {props.quantity9 > 0 ? showItem9() : ""}
+                <div className='checkout-container'>
+                    <h2>TOTAL: ${displayTotal()}</h2>
+                    <button className='checkout-btn'>Checkout</button>
+                </div>
             </div>
         </div>
     )

@@ -14,7 +14,6 @@ export default function Shop() {
     const [item7, setItem7] = useState(0)
     const [item8, setItem8] = useState(0)
     const [item9, setItem9] = useState(0)
-
     //decrease quantity
     const decreaseBtn = (e) => {
         // console.log(e.target.id)
@@ -38,7 +37,6 @@ export default function Shop() {
             setItem9((prevItem9)=> prevItem9 - 1)
         }
     }
-
     //const increase quantity
     const increaseBtn = (e) => {
         console.log('click')
@@ -62,14 +60,12 @@ export default function Shop() {
             setItem9((prevItem9)=> prevItem9 + 1)
         }
     }
-
     //show cart on render note: i dont think  i need all items but making sure to update on every render tho.
     useEffect(()=>{
         if (item1 > 0 || item2 > 0 || item3 > 0 || item4 > 0 || item5 > 0 || item6 > 0 || item7 > 0 || item8 > 0 || item9 > 0){
             setCart(true)
         }
     },[item1,item2,item3,item4,item5,item6,item7,item8,item9])
-
     //const add to cart
     const addToCartBtn = (e) => {
         clothesDatas.find((clothesData)=>{
@@ -96,7 +92,6 @@ export default function Shop() {
             }
         })
     }
-
     //show clothes on display
     const showClothesDisplay = clothesDatas.map((clothesData)=>{
         return (
@@ -122,7 +117,6 @@ export default function Shop() {
             <div className="shop-container">
                 {showClothesDisplay}
             </div>
-            <div className='cart-container'>
                 {cart && <Cart 
                     quantity1={item1} 
                     quantity2={item2} 
@@ -136,7 +130,6 @@ export default function Shop() {
                     decreaseClick={decreaseBtn}
                     increaseClick={increaseBtn}
                 />}
-            </div>
         </div>
     )
 }
